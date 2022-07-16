@@ -1,0 +1,59 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: TTNormsPro-Bold;
+    src: url(../fonts/TTNormsPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: TTNormsPro-ExtraLight;
+    src: url(../fonts/TTNormsPro-ExtraLight.ttf);
+}
+
+
+body{
+    font-family:'TTNormsPro', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    overflow-x: hidden;
+    color: rgb(14, 14, 14);
+}
+li{
+    list-style-type: none;
+}
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+section, header, footer, div, aside, nav, article,figure, main{
+    flex-wrap: wrap;
+}
+p{
+    font-size: 20px;
+    padding-top: 16px;
+    font-family: TTNormsPro-ExtraLight;
+    color: black;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: bold;
+    font-family: TTNormsPro-Bold;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bold;
+}

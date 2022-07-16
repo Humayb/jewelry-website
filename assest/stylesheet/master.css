@@ -1,0 +1,751 @@
+/* ==========menu============== */
+nav{
+    width: 100%;
+    font-weight: bold;
+    /* background-color: brown; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 1vh;
+    text-transform: uppercase;
+    display: flex;
+
+}
+nav>ul{
+    /* background-color: aqua; */
+    margin: 1%;
+    justify-content: center;
+    align-content: center;
+}
+
+nav :is(ul:nth-of-type(1), ul:nth-of-type(3)) {
+    width: 17%;
+}
+
+nav>ul:nth-of-type(2){
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav>ul:nth-of-type(3)>li{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav>ul>li>a{
+    position: relative;
+}
+
+nav>ul>li>a::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    right: 60%;
+    height: 4px;
+    bottom: 20px;
+    background-color: #981b1e;
+    border-radius: 4px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translate3d(0, 0, 0);
+}
+
+nav>ul>li>a:hover::after{
+    left: 0%;
+    right: 0%;
+}
+
+nav>ul>li>a:hover{
+    color: #981b1e;
+}
+
+
+/* ==========sec1============== */
+.sec1{
+    width: 100%;
+    display: flex;
+}
+
+.sec1 :is(div:nth-of-type(1), div:nth-of-type(2)){
+    text-transform: uppercase;
+}
+
+.sec1>div:nth-of-type(1){
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-top: none;
+    display: grid;
+    grid-template-areas: "top top top"
+                         "top top top"
+                         "between between between"
+                         "down-l down-r down-r";
+}
+
+
+.sec1>div:nth-of-type(1)>div:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    font-size: 12vh;
+    font-weight: bold;
+    grid-area: top;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.sec1>div:nth-of-type(1)>div:nth-of-type(2){
+    grid-area: between;
+    border-bottom: 2px solid black;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    padding-left: 2vh;
+    line-height: 24px;
+}
+
+/* ==========sec1 - left - down-l============== */
+.sec1>div:nth-of-type(1)>div:nth-of-type(3){
+    grid-area: down-l;
+    border-right: 2px solid black;
+    font-weight: normal;
+    width: 50vh;
+    padding:  2vh;
+}
+
+#sec1-down>li:nth-of-type(1){
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    font-size: 50px;
+}
+
+#sec1-down>li:nth-of-type(2){
+    padding-top: 20vh;
+}
+
+/* ==========sec1 - left - down-r============== */
+.sec1>div:nth-of-type(1)>div:nth-of-type(4){
+    grid-area: down-r;
+    width:60vh;
+}
+.sec1>div:nth-of-type(1)>div:nth-of-type(4)>p{
+    margin: 10vh;
+}
+/* ==========sec1 - right============== */
+
+.sec1>div:nth-of-type(2){
+    width: 81vh;
+    /* background-color:blueviolet; */
+}
+.sec1>div:nth-of-type(2)>img{
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+/* ========== sec2 ============== */
+#sec2{
+    border: 1px solid black;
+    /* background-color: blueviolet; */
+    text-transform: capitalize;
+}
+
+#sec2>h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#sec2>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+#sec2>div:nth-of-type(1)>hr{
+    height: 40vh;
+    margin: 10vh 0;
+}
+
+#sec2>div:nth-of-type(1)>ul{
+    margin: 2vw 0;
+    /* background-color: brown; */
+    /* border: 2px solid yellow; */
+    padding: 2vw 8vw;
+
+}
+
+#sec2>div:nth-of-type(1)>ul>li{
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid burlywood; */
+
+}
+
+.cricle>img{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 ;
+    margin: 0 10px;
+    object-fit: cover;
+
+}
+
+section:nth-of-type(2)>div:nth-of-type(1)>ul>li{
+    justify-content: space-around;
+}
+
+/* =========sec2-button============== */
+section:nth-of-type(2)>div:nth-of-type(1)>ul>li>a{
+    border: 2px solid black;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    position: relative;
+    transition: all .4s;
+}
+
+section:nth-of-type(2)>div:nth-of-type(1)>ul>li>a:hover{
+    position: absolute;
+    border: 2px solid #981b1e;
+    color: #ddd !important;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+section:nth-of-type(2)>div:nth-of-type(1)>ul>li>a:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+    color: #e2e2e2;
+
+}
+
+section:nth-of-type(2)>div:nth-of-type(1)>ul>li>a::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    color: black !important;
+    background-color: #981b1e;
+    transition: all .4s;
+
+}
+/* =========section 3============== */
+
+#sec3{
+    width: 100vw;
+    border: 1px solid black;
+    padding: 80px 150px;  
+}
+
+#sec3>h3{
+    margin-bottom: 32px;
+}
+
+#sec3>div:nth-of-type(1){
+    display: flex;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden; 
+    border: 2px solid black;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+#card1{
+    background: url(../img/closeup-shot-male-formal-outfit-wearing-golden-ring.jpg);
+}
+
+#card2{
+    background: url(../img/card2.png);
+}
+
+#card3{
+    background: url(../img/card3.jpg);
+}
+
+#card4{
+    background: url(../img/card4.jpg);
+}
+
+#card5{
+    background: url(../img/card5.jpg);
+}
+
+.card-content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.719);
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card-content::before{
+    content: '';
+    position: absolute;
+    top: -45px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    box-shadow: insert 48px 48px #fff;
+}
+
+.card>h3{
+    line-height: 15px;
+}
+
+.card>p{
+    opacity: 0;
+    transition: opacity .5s;
+}
+.card-content:hover{
+    transform: translateY(0);
+}
+
+.card:hover, .card>p{
+    opacity: 1;
+    transition-delay: .15s;
+}
+
+/* ========= Section 4============== */
+
+section:nth-of-type(4){
+    width: 100%;
+    /* background-color: #981b1e; */
+    border: 1px solid black;
+    padding: 5% 10%;
+}
+
+section:nth-of-type(4)>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+section:nth-of-type(4)>h2{
+    margin-bottom: 56px;
+}
+
+.img-pro{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.img-btn,
+.img-btn-hover{
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: 50% 50% -25px;
+    transition: all .4s;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.t-shop{
+    z-index: 200;
+    font-family: TTNormsPro-Bold;
+    background-color: rgba(255, 250, 250, 0.568);
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.img-btn{
+    transform: rotateX(0deg);   
+    color: black; 
+}
+
+.img-btn-hover{
+    transform: rotateX(90deg);
+    color: black;
+}
+
+.img-btn:hover .img-btn{
+    transform: rotateX(-90deg);
+}
+
+.img-btn:hover .img-btn-hover{
+    transform: rotateX(0deg);  
+    /* background-color: #981b1e;   */
+}
+
+section:nth-of-type(4)>div:nth-of-type(2){
+    padding-top: 10px;
+}
+
+/* ========= Footer ============== */
+
+footer{
+    width: 100%;
+    background-color: #e2e2e2;
+    padding: 20px;
+
+}
+#border-footer>ul:nth-of-type(1)>li:nth-of-type(1){
+    font-family: TTNormsPro-Bold;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#border-footer>ul:nth-of-type(1)>li:nth-of-type(3)>a>i{
+    color: 2rem;
+}
+
+#border-footer>ul:nth-of-type(1)>li:nth-of-type(3)>a>i:hover{
+    color: #4043fc;
+}
+#border-footer{
+    border: 1.5px solid rgb(0, 0, 0); 
+    display: flex; 
+}
+#border-footer>ul{
+    width: 22%;
+    margin-right: 20px;
+    padding: 20px 20px;
+    border-right: 1.5px solid black;
+    /* background-color: red; */
+}
+
+#border-footer>ul:nth-of-type(4){
+    border-right: none;
+}
+
+#border-footer>ul>li{
+    margin: 16px 0;
+}
+
+#border-footer>ul:nth-of-type(2)>li>a:hover{
+    color: #981b1e;
+}
+/* ========= login page============== */
+
+.sec1-login{
+    width: 100%;
+    height: 92vh ;
+    background-image: url(../img/shiny-expresive-diamons1.jpg);
+    background-size: cover;
+    /* object-fit: cover; */
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#border-login{
+    width: 98%;
+    height: 96%;
+    border: 2px solid black;
+    padding: 5% 38%;
+    margin: 1%;
+    
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+    margin-right: 10%;
+}
+
+#box-content>ul{
+    /* background-color: #4043fc; */
+    margin-left: 10%;
+    
+}
+
+#box-content>ul>li{
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+#box-content>ul:nth-of-type(1)>li>input{
+    margin: 10px 0;
+    padding: 5%;
+    width: 200px;
+    height: 32px;
+}
+
+#box-content>ul:nth-of-type(2){
+    padding-top: 20px;
+    /* background-color: #981b1e; */
+}
+
+#box-content>ul:nth-of-type(2)>li{
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+    border: 2px solid black;
+    width: 200px;
+    font-weight: bold;
+}
+#box-content>ul:nth-of-type(2)>li:nth-of-type(1){
+    background-color: #981b1e;
+    color: #e2e2e2;
+}
+
+#box-content>ul:nth-of-type(2)>li:nth-of-type(2):hover{
+    border-color: #4043fc;
+    color: #4043fc;
+}
+
+
+
+/* ========= About us page============== */
+
+/* ========= Section 1- about us============== */
+.sec1-about-us{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    outline: 2px solid black;
+    outline-offset: -40px;
+    z-index: 20;
+}
+
+.sec1-img-about-us{
+    border-top:none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background: #42424244;
+    background-size: cover;
+}
+
+#sec1-img1-about-us{
+    background-image: url(../img/aboutus/close-up-photo-jewelry-worker-presenting-costly-necklace-with-gemstones-luxury-jewelry-store.jpg);
+    transition: all 1.3s ease-in-out;
+    z-index: 4;
+    background: rgba(#424242,.5) repeat fixed ;
+    display: inline-block;
+}
+
+#sec1-img2-about-us{
+    background-image: url(../img/aboutus/close-up-photo-woman-s-hands-who-makes-handmade-necklaces-working-with-needles-thread-jewelry-workshop.jpg);
+    background: rgba(#424242,.5) repeat fixed ;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    white-space: nowrap;
+    transition-property: opacity, width;
+    transition-duration: 3s;
+    transition-delay: .5s;
+    opacity: 100%;
+    width: 100%;
+    transition-timing-function: linear;
+}
+
+#sec1-img2-about-us:hover{
+    opacity: 0;
+    width: 0%;
+}
+
+.sec1-content-about-us{
+    position: absolute;
+    top:35vh;
+    right:35vw;
+    z-index: 99;
+    color: #e2e2e2;
+    text-align: center;
+}
+
+.sec1-content-box :is(h1, h2){
+    text-transform: uppercase;
+    font-size: 72px;
+}
+
+.sec1-content-box>span{
+    font-size: 30px;
+}
+
+
+/* ========= Section 2- about us============== */
+
+section:nth-of-type(2){
+    width: 100%;
+    padding: 5%;
+    border: 1px solid black;
+}
+
+section:nth-of-type(2)>h2{
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.accordons{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.acc{
+    width: 80%;
+    overflow: hidden;
+    margin-left: 8vw;
+    border: 1px solid black;
+}
+
+.check_label{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ececec;
+
+}
+
+.check_label:hover{
+    background-color: #981b1e;
+}
+
+.check_label::after{
+    content: '>';
+    width: 5vw;
+    height: 3vh;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.acc_content{
+    max-height: 0;
+    padding: 0 2px;
+    background-color: #fcfcfc;
+    transition: all .4s ease;
+}
+
+.acc>input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.acc>input:checked + .check_label::after{
+    transform: rotate(90deg);
+}
+
+.acc>input:checked ~ .acc_content{
+    max-height: 40vh;
+    padding: 5%;
+}
+
+/* ========= Section 3- about us============== */
+
+#about-us-1{
+    border: 1px solid black;
+    border-top: 0;
+    padding: 5%;
+    min-height: 80vh;
+}
+#about-us-1>p{
+    margin-bottom: 56px;
+    margin-right: 5vw;
+    /* background-color: #4043fc; */
+}
+
+.box-about-us{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    /* margin-top: 52px;   */
+/* background-color: #4043fc; */
+}
+
+.card-about-us{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    /* margin: 0 auto; */
+    border-radius:5px;
+    box-shadow:  0 2px 10px rgb(0,0,0,.2);
+}
+
+.card-about-us::before,
+.card-about-us::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg, #ececec, #f5f1f1);
+    border-radius: 5px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.card-about-us:hover:before{
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgb(0,0,0,.2);
+}
+
+.card-about-us:hover:after{
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgb(0,0,0,.2);
+}
+
+.card-about-us>figure{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #222;
+    transition: .4s;
+    z-index: 1;
+}
+
+.card-about-us:hover figure{
+    bottom: 80px;
+}
+
+.fig-about-us>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.figcap-about-us{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.figcap-about-us>h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
