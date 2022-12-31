@@ -1,6 +1,7 @@
 # jewelry-website!
 
-[jewellry-1000](https://user-images.githubusercontent.com/82465022/210127597-cfa72eae-96b0-4f64-902d-8def8b38b04a.jpg)
+
+![jewellry-1000](https://user-images.githubusercontent.com/82465022/210129635-1fa052a1-bcea-4714-b602-b7334bc0fd96.jpg)
 
 About Us
 
