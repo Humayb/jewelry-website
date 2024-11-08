@@ -1,5 +1,10 @@
 # jewelry-website!
 
+- [Demo Project](https://humayb.github.io/Heritage-Accommodation/)
+
+- UI Designer and Developer: Homa BahramParvar
+- Technologies Used - Html , CSS
+
 
 ![jewellry-1000](https://user-images.githubusercontent.com/82465022/210129635-1fa052a1-bcea-4714-b602-b7334bc0fd96.jpg)
 
